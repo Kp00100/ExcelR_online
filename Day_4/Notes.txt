@@ -1,0 +1,45 @@
+what is div and span?
+
+div:
+    -block level element 
+    -
+
+
+
+
+span:
+    -inline element
+
+
+
+Block level element --> div, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
+                    --> it will occupy entire width
+                    --> it will start in new line
+                    --> it respects height and width properties
+                    --> it respects margin and padding properties 
+                    --> convert: display:inline 
+
+Inline level element --> i, span, b, small
+                     --> it will occupy required space 
+                     --> it won't respects height and width properties
+                     --> it won't respects margin and padding properties       
+                     -->convert: display:block
+
+        display :Inline block(it is inline element but respects height eidth margin padding like blick level elements)
+
+
+Box-sizing:
+    --box-sizing is an property apply for all element 
+    --default value is content box
+    --it is used to define the width and height of an element
+
+eg: width: 100px;
+    height: 100px;
+    border: 2px;
+    padding: 10px;
+
+    box-sizing: content box;
+    100+2+2+10+10 = 144px
+
+    box-sizing: border box;
+    100+-+-+-+- = 100px 

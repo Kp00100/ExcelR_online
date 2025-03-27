@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELECTOR</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 5px;
+            padding: 0;
+            /*broeser will provide default value for margin*/
+        }
+        small,div{
+            background-color: rgb(45, 199, 204);
+            font-size: 15px;
+        }
+      
+    </style>
+</head>
+<body>
+    <h1>SELECTOR</h1>
+    <hr>
+    <h3>Universal Selector</h3>
+    <p>it indicates with *</p>
+    <p>it select all elements</p>
+    <hr>
+    <h3>Grouping selector</h3>
+        <small>It is used to select group of elements</small>
+        <div>It is indicated with commaa(,)</div>
+        <hr>
+        <h3>Combined Selector</h3>
+        <ol>
+            <li><h3>descendent selector</h3>
+                <p>it selects all child elements(direct/indirect)</p>
+                <pre>
+                    parent child{
+                        // both direct and indirect childs will select
+                    }
+                </pre>
+            </li>
+
+            <li><h3>child selector</h3>
+                <p>it selects direct child selector</p>
+                <pre>
+                    parent > child{
+                        //it selects direct child
+                    }
+                </pre>
+            </li>
+
+            <li><h3>adjacent sibling selector</h3>
+
+                <p>it select immediate adjacent element</p>
+                <pre>
+                    main +adjacentelementd{
+                        //it select immediate adjacent element
+                    }
+                </pre>
+            </li>
+            <li><h3>general sibling selector</h3>
+                <p>it selects all adjacent elements</p>
+                <pre>
+                    main ~adjacentelementd{
+                        //it selects all siblings to main elements
+                    }
+                </pre>
+            </li>
+
+        </ol>
+</html>

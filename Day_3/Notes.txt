@@ -1,0 +1,11 @@
+What are different headigs in html
+
+
+
+
+
+what is css
+
+css-cascading style sheet 
+    -used to style/ design web pages 
+    -to apply css to an element 

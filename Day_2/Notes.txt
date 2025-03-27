@@ -1,0 +1,123 @@
+Full stack --> front end + back end (database)
+
+frontend:
+    html -->hyper text markup language (skeleton or layout of website)
+    css -->cascading style sheet (styling purpose) 
+    js -->javascript (fuction)
+
+backend:
+    database --> is a container where data can be store.
+
+
+
+    Web technologies:
+        the technologies or tools to create/ develop webpage and web application.
+
+-------------------------------------------------------------------------------------------------
+
+HTML --> Hyper Text Markup Language 
+     --> used to create the structure of the webpage
+     --> the file must have .html extension
+     --> is introduced by Tim berners-lee in 1993
+     --> is a markup language
+     --> is a combination of tags and attributes
+
+--------------------------------------------------------------------------------------------------
+
+Tag --> tag is a keyword which is enclosed in ankle brackets <tagname> </tagname>
+    --> are of two types 
+        1.paired tag 
+        2.unpaired tag
+
+
+1.Paired tag/ Container tag:
+        <html> --opening tag
+
+        --paired tags--
+
+        </html> --closing tag 
+        
+2.Unpaired tag/ non Cantainer tag:
+    eg: <hr>
+
+---------------------------------------------------------------------------------------------------
+
+List:
+    1.Ordered list
+    2.Unordered list
+    3.Declaration list
+
+1.Ordered List:
+    --> a list maintaining the Order 
+    --> syntax:
+    <ol>
+    <li>Frontend</li>
+    <li>Backend</li>
+    <li>Database</li>
+    </ol>
+    --> default value is number
+    --> <ol type="A"></ol> type attribute used to change the default value
+    --> type- a, A, i, I
+    --> <ol reversed> to reversed the order -- reversed attribute
+    --> custom order -- start attribute
+
+2.Unordered List:
+    --> <ul></ul>
+    --> Default value is disc 
+    --> <ul type="square"></ol> type attribute used to change the default value
+    --> type- disc, circle, square
+
+
+3.Declaration tag/ Defination tag:
+    --> <dl></dl>
+    --> <dt></dt> -- definition title
+    --> <dd></dd> -- definition description or data
+
+
+4.Nested List:
+    --> it is list inside list
+    
+-------------------------------------------------------------------------------------------------
+
+Attribute:
+    --> it defines additional information of a tag
+    --> it is a property of tag
+    --> it is written inside a opening tag
+    --> eg:- type, start, reversed, etc
+
+--------------------------------------------------------------------------------------------------
+
+Extensions:
+    vscode-icons
+    server
+
+---------------------------------------------------------------------------------------------------
+
+Content --> whatever we write in tag (This is my First session in ExcelR )
+Element --> A tag along with content is element (<p>This is my First session in ExcelR</p>)
+
+---------------------------------------------------------------------------------------------------
+
+html5 syntax:
+    <!DOCTYPE html> --> Describe html 5th version
+<html lang="en"> --> root element
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+------------------------------------------------------------------------------------------------------
+
+Feature of HTML5:
+    1.Semantic tags 
+    2.Multimedia tags 
+    3.Canvas 
+    4.Geolocation api 
+    5.Drag and drop api 
+    6.storage(session storage)
+    7.Page responsiveness
