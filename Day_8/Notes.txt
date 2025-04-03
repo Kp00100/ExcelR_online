@@ -1,0 +1,33 @@
+
+Flex:
+
+
+<p>it is used to align elements</p>
+    <p>it is used to distribute space between elements</p>
+    <p>it is used to distribute space around elements</p>
+    <p>it will arrange elements in cross axis and main axis</p>
+    <p>flex cotainer is main division of flex</p>
+    <p>flex items are child of flex container</p>
+    <p>flex caontainer is used to wrap the flex items</p>
+    <p>display: flex; is used to make flex cotainer</p>
+    <p>default direction is row(left to right)</p>
+    <p>"flex-direction: row-reverse; row; column; column-reverse;" is used to change the direction</p>
+
+    row(lef to right) --> x-axis(main axis) y-axis(cross axis)
+    column(top to bottom) --> y-axis(main axis) x-axis(cross axis)
+
+    justify-content --> main axis
+    align items --> cross axis
+    gap --> used to give gap between content
+
+
+    child properties:
+    flex grow: it is used to grow elements size according to width
+        default-0
+    flex shrink: it is used to shrink elements size according to width
+        default-1
+        0-items won't shrink
+    order: it is used to rearrange the order of flex items
+
+    justify-self --> to provide justify content property, specifically to flex items
+    align-self --> to provide align items property, specifically to flex items

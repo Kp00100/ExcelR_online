@@ -1,0 +1,32 @@
+Table, its tags and its attributes
+<table></table> --> used to create table
+<thead></thead> --> used to create head of the table
+<tbody></tbody> --> used to create body of the table
+<tfoot></tfoot> --> used to create foot of the table
+<caption></caption> -->to provide caption of table
+
+<th></th> --> used to write head content(strong text)
+<td></td> --> used to write body of content
+
+rowspan and colspan --> these are the properties of th and td tags
+rowspan --> used to merge the rows
+colspan --> used to merge the columns 
+
+border, cellpadding, cellspacing, weight, height, align 
+
+----------------------------------------------------------------------------------------
+
+Pseudo element and Peseudo class:
+
+Pseudo element:
+    used to sleect specific part of the element
+    indicating with::(double colon)
+    eg:
+        ::first-letter, ::first-line, ::selection, ::before, ::after, ::marker
+Peseudo class:
+    used to select based on its state
+    indicating with:(colon)
+    eg:
+        :link, :active, :visited, :hover
+
+---------------------------------------------------------------------------------------------

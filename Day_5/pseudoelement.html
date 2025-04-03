@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element</title>
+    <style>
+        #p1{
+            background-color: rgb(164, 198, 229);
+        }
+        #p1::first-letter{
+            color: red;
+            font-size: 40px;
+        }
+        #p1::first-line{
+            color: rgb(43, 9, 63)
+        }
+        #p2::after{
+            content: "😊😊";
+        }
+        #p2::before{
+            content: "😂😂";
+        }
+        #p1::selection{
+            background-color: red;
+        }
+        ::marker{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo Element</h1>
+    <hr>
+    <p>it is used to add style to the specific part of an element based on its state</p>
+    <p>it indicates with :: (double colon)</p>
+    <hr>
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, eaque. Architecto similique sed deserunt unde facere? Assumenda, dignissimos iusto. Quo assumenda, consequuntur dolorum necessitatibus cumque eos illum molestiae possimus velit aut voluptates officiis odio, impedit pariatur inventore dignissimos fugit debitis magnam consequatur error. Autem sunt neque, cum laborum rem odit inventore debitis obcaecati assumenda? Aut consequatur voluptas sed quaerat ad culpa optio pariatur fuga nisi! Delectus velit nulla explicabo quos officiis, odio cum iusto consequuntur amet vero, culpa iste sapiente voluptatibus veniam eos. Non pariatur, accusantium rem ea nostrum iste deserunt velit ab nobis! Facere consequatur architecto corrupti illum placeat?</p>
+    <p id="p2">This content</p>
+    <ol>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ol>
+
+
+</body>
+</html>

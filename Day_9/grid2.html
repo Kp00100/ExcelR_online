@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 2</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(5, 100px);
+            grid-template-rows: repeat(5, 100px);
+            /* grid-template-columns: 100px 100px 200px; */
+            /* grid-template-columns: 30% 10% 20%; */
+            /* grid-template-columns: 1fr 1fr 2fr; */
+            /* grid-template-columns: repeat(4, 100px) 1fr 1fr; */
+        }
+        .child{
+            background-color: red;
+            font-size: 40px;
+            margin: 10px;
+        }
+        .one{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .two{
+            grid-column-start: 3;
+            grid-column-end: 6;
+        }
+        .three{
+            grid-row-start: 2;
+            grid-row-end: 5;
+        }
+        .four{
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        .five{
+            /* grid-column-start: 3;
+            grid-column-end: 6;
+            grid-row-start: 2;
+            grid-row-end: 6; */
+            /* grid-column: 3/6;
+            grid-row: 2/6; */
+            grid-area: 2/3/6/6;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child one">1</div>
+        <div class="child two">2</div>
+        <div class="child three">3</div>
+        <div class="child four">4</div>
+        <div class="child five">5</div>
+        <div class="child six">6</div>
+
+    </div>
+</body>
+</html>

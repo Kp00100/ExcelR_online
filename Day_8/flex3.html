@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex2</title>
+    <style>
+        /* Flex container */
+        .parent{
+            height: 700px;
+            border: 1px solid red;
+            display: flex;
+        } 
+        /* Flex items */
+        .child{
+            /* flex-grow: 4; */
+            /* flex-shrink: 1; */
+
+            height: 100px;
+            width: 200px;
+            font-size: 40px;
+        }
+        .one{
+            background-color: aqua;
+        }
+        .two{
+            order: 4;
+            /* flex-grow: 2; */
+            background-color: blueviolet;
+        }
+        .three{
+            background-color: chartreuse;
+        }
+        .four{
+            background-color: darkgoldenrod;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex</h1>
+    <hr>
+    <p>it is used to align elements</p>
+    <p>it is used to distribute space between elements</p>
+    <p>it is used to distribute space around elements</p>
+    <p>it will arrange elements in cross axis and main axis</p>
+    <p>flex cotainer is main division of flex</p>
+    <p>flex items are child of flex container</p>
+    <p>flex caontainer is used to wrap the flex items</p>
+    <p>display: flex; is used to make flex cotainer</p>
+    <p>default direction is row(left to right)</p>
+    <p>"flex-direction: row-reverse; row; column; column-reverse;" is used to change the direction</p>
+
+
+
+    <hr>
+    <div class="parent">
+        <div class="child one">1</div>
+        <div class="child two">2</div>
+        <div class="child three">3</div>
+        <div class="child four">4</div>
+        
+    </div>
+</body>
+</html>
