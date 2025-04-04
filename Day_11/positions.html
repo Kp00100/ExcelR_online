@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positions</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      p {
+        position: static;
+        bottom: 0;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+      }
+
+      .one {
+        background-color: red;
+        position: relative;
+        top: 40px;
+        left: 20px;
+        z-index: 5;
+      }
+      .two {
+        background-color: blue;
+        position: relative;
+        top: 10px;
+        left: 40px;
+        z-index: 3;
+      }
+      .three {
+        background-color: green;
+        position: relative;
+        left: 60px;
+        bottom: 20px;
+        z-index: 1;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 30%;
+        right: 0;
+      }
+      .fa-brands {
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+        font-size: 2em;
+        margin: 5px;
+        background-color: rgb(102, 102, 238);
+        text-align: center;
+        border-radius: 20%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+      }
+      .fa-brands:hover {
+        background-color: rgb(0, 0, 0);
+        color: white;
+        width: 60px;
+        height: 60px;
+      }
+      .stickyContent {
+        width: 300px;
+        height: 100px;
+        background-color: red;
+        position: sticky;
+        top: 30px;
+      }
+
+      .parent{
+        background-color: blue;
+        width: 500px;
+        height: 300px;
+        position: relative;
+      }
+      .child{
+        background-color: salmon;
+        width: 200px;
+        height: 100px;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Positions in css</h1>
+    <hr />
+    <p>to arrange elements in a positions we can use position property</p>
+    <ul>
+      <li>static</li>
+      <li>relative</li>
+      <li>absolute</li>
+      <li>fixed</li>
+      <li>sticky</li>
+    </ul>
+
+    <hr />
+    <h2>static</h2>
+    <p>default position of an element</p>
+    <p>elements are positioned according to the normal flow of the document</p>
+    <p>top, right, bottom, left are not set</p>
+    <hr />
+    <h2>Relative</h2>
+    <p>positioned relative to its normal position</p>
+    <p>top, right, bottom, left are set</p>
+
+    <p class="box one"></p>
+    <p class="box two"></p>
+    <p class="box three"></p>
+
+    <hr />
+
+    <h3>z-index</h3>
+    <p>z-index is used to set the stack order of an element</p>
+    <p>
+      elements with a higher z-index are positioned in front of elements with a
+      lower z-index
+    </p>
+    <p>
+      z-index only works on positioned elements (position: absolute, position:
+      relative, position: fixed, or position: sticky)
+    </p>
+    <p>
+      z-index is set to 0 by default and it consider positive and negative
+      values
+    </p>
+
+    <hr />
+    <h2>Fixed</h2>
+    <p>positioned relative to the viewport</p>
+    <p>top, right, bottom, left are set</p>
+    <p>it is fixed to the viewport</p>
+    <div class="container">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-youtube"></i>
+    </div>
+
+    <hr />
+    <h2>Sticky</h2>
+    <p>positioned based on the user's scroll position</p>
+    <p>it is a combination of relative and fixed</p>
+
+    <p class="stickyContent">this is sticky content</p>
+
+    <hr />
+    <h2>absolute</h2>
+    <p>positioned relative to the nearest positioned ancestor</p>
+    <p>if there is no positioned ancestor, it is positioned relative to the
+      initial containing block</p>
+    <p>top, right, bottom, left are set</p>
+
+   <div class="parent">
+    this is parent element
+    <div class="child">this is child element</div>
+   </div>
+
+
+
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur
+      voluptatibus dignissimos, impedit suscipit repellat sint, ut earum odio
+      reprehenderit modi facere quisquam error aliquid eum facilis numquam nam
+      perspiciatis hic rerum? Rem voluptatum, at ipsa eligendi recusandae nulla
+      magnam omnis esse nam consequuntur non quod id libero culpa, animi
+      suscipit maxime? Quisquam, sapiente. Cupiditate at sint provident suscipit
+      maxime? Quisquam, sapiente. Cupiditate at sint provident suscipit maxime?
+      Quisquam, sapiente. Cupiditate at sint provident deserunt, fuga id earum
+      quo ad debitis adipisci ipsum eius, magnam veniam quis! Laudantium rerum
+      incidunt eius iusto perferendis odit et corrupti? Doloremque, quam libero
+      dignissimos enim dolore consectetur esse? Placeat reiciendis voluptate
+      voluptatum totam inventore? Dolor consectetur dolorum fuga iusto
+      necessitatibus reiciendis.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur
+      voluptatibus dignissimos, impedit suscipit repellat sint, ut earum odio
+      reprehenderit modi facere quisquam error aliquid eum facilis numquam nam
+      perspiciatis hic rerum? Rem voluptatum, at ipsa eligendi recusandae nulla
+      magnam omnis esse nam consequuntur non quod id libero culpa, animi
+      suscipit maxime? Quisquam, sapiente. Cupiditate at sint provident suscipit
+      maxime? Quisquam, sapiente. Cupiditate at sint provident suscipit maxime?
+      Quisquam, sapiente. Cupiditate at sint provident deserunt, fuga id earum
+      quo ad debitis adipisci ipsum eius, magnam veniam quis! Laudantium rerum
+      incidunt eius iusto perferendis odit et corrupti? Doloremque, quam libero
+      dignissimos enim dolore consectetur esse? Placeat reiciendis voluptate
+      voluptatum totam inventore? Dolor consectetur dolorum fuga iusto
+      necessitatibus reiciendis.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur
+      voluptatibus dignissimos, impedit suscipit repellat sint, ut earum odio
+      reprehenderit modi facere quisquam error aliquid eum facilis numquam nam
+      perspiciatis hic rerum? Rem voluptatum, at ipsa eligendi recusandae nulla
+      magnam omnis esse nam consequuntur non quod id libero culpa, animi
+      suscipit maxime? Quisquam, sapiente. Cupiditate at sint provident suscipit
+      maxime? Quisquam, sapiente. Cupiditate at sint provident suscipit maxime?
+      Quisquam, sapiente. Cupiditate at sint provident deserunt, fuga id earum
+      quo ad debitis adipisci ipsum eius, magnam veniam quis! Laudantium rerum
+      incidunt eius iusto perferendis odit et corrupti? Doloremque, quam libero
+      dignissimos enim dolore consectetur esse? Placeat reiciendis voluptate
+      voluptatum totam inventore? Dolor consectetur dolorum fuga iusto
+      necessitatibus reiciendis.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur
+      voluptatibus dignissimos, impedit suscipit repellat sint, ut earum odio
+      reprehenderit modi facere quisquam error aliquid eum facilis numquam nam
+      perspiciatis hic rerum? Rem voluptatum, at ipsa eligendi recusandae nulla
+      magnam omnis esse nam consequuntur non quod id libero culpa, animi
+      suscipit maxime? Quisquam, sapiente. Cupiditate at sint provident suscipit
+      maxime? Quisquam, sapiente. Cupiditate at sint provident suscipit maxime?
+      Quisquam, sapiente. Cupiditate at sint provident deserunt, fuga id earum
+      quo ad debitis adipisci ipsum eius, magnam veniam quis! Laudantium rerum
+      incidunt eius iusto perferendis odit et corrupti? Doloremque, quam libero
+      dignissimos enim dolore consectetur esse? Placeat reiciendis voluptate
+      voluptatum totam inventore? Dolor consectetur dolorum fuga iusto
+      necessitatibus reiciendis.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur
+      voluptatibus dignissimos, impedit suscipit repellat sint, ut earum odio
+      reprehenderit modi facere quisquam error aliquid eum facilis numquam nam
+      perspiciatis hic rerum? Rem voluptatum, at ipsa eligendi recusandae nulla
+      magnam omnis esse nam consequuntur non quod id libero culpa, animi
+      suscipit maxime? Quisquam, sapiente. Cupiditate at sint provident suscipit
+      maxime? Quisquam, sapiente. Cupiditate at sint provident suscipit maxime?
+      Quisquam, sapiente. Cupiditate at sint provident deserunt, fuga id earum
+      quo ad debitis adipisci ipsum eius, magnam veniam quis! Laudantium rerum
+      incidunt eius iusto perferendis odit et corrupti? Doloremque, quam libero
+      dignissimos enim dolore consectetur esse? Placeat reiciendis voluptate
+      voluptatum totam inventore? Dolor consectetur dolorum fuga iusto
+      necessitatibus reiciendis.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur
+      voluptatibus dignissimos, impedit suscipit repellat sint, ut earum odio
+      reprehenderit modi facere quisquam error aliquid eum facilis numquam nam
+      perspiciatis hic rerum? Rem voluptatum, at ipsa eligendi recusandae nulla
+      magnam omnis esse nam consequuntur non quod id libero culpa, animi
+      suscipit maxime? Quisquam, sapiente. Cupiditate at sint provident suscipit
+      maxime? Quisquam, sapiente. Cupiditate at sint provident suscipit maxime?
+      Quisquam, sapiente. Cupiditate at sint provident deserunt, fuga id earum
+      quo ad debitis adipisci ipsum eius, magnam veniam quis! Laudantium rerum
+      incidunt eius iusto perferendis odit et corrupti? Doloremque, quam libero
+      dignissimos enim dolore consectetur esse? Placeat reiciendis voluptate
+      voluptatum totam inventore? Dolor consectetur dolorum fuga iusto
+      necessitatibus reiciendis.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur
+      voluptatibus dignissimos, impedit suscipit repellat sint, ut earum odio
+      reprehenderit modi facere quisquam error aliquid eum facilis numquam nam
+      perspiciatis hic rerum? Rem voluptatum, at ipsa eligendi recusandae nulla
+      magnam omnis esse nam consequuntur non quod id libero culpa, animi
+      suscipit maxime? Quisquam, sapiente. Cupiditate at sint provident suscipit
+      maxime? Quisquam, sapiente. Cupiditate at sint provident suscipit maxime?
+      Quisquam, sapiente. Cupiditate at sint provident deserunt, fuga id earum
+      quo ad debitis adipisci ipsum eius, magnam veniam quis! Laudantium rerum
+      incidunt eius iusto perferendis odit et corrupti? Doloremque, quam libero
+      dignissimos enim dolore consectetur esse? Placeat reiciendis voluptate
+      voluptatum totam inventore? Dolor consectetur dolorum fuga iusto
+      necessitatibus reiciendis.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur
+      voluptatibus dignissimos, impedit suscipit repellat sint, ut earum odio
+      reprehenderit modi facere quisquam error aliquid eum facilis numquam nam
+      perspiciatis hic rerum? Rem voluptatum, at ipsa eligendi recusandae nulla
+      magnam omnis esse nam consequuntur non quod id libero culpa, animi
+      suscipit maxime? Quisquam, sapiente. Cupiditate at sint provident suscipit
+      maxime? Quisquam, sapiente. Cupiditate at sint provident suscipit maxime?
+      Quisquam, sapiente. Cupiditate at sint provident deserunt, fuga id earum
+      quo ad debitis adipisci ipsum eius, magnam veniam quis! Laudantium rerum
+      incidunt eius iusto perferendis odit et corrupti? Doloremque, quam libero
+      dignissimos enim dolore consectetur esse? Placeat reiciendis voluptate
+      voluptatum totam inventore? Dolor consectetur dolorum fuga iusto
+      necessitatibus reiciendis.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur
+      voluptatibus dignissimos, impedit suscipit repellat sint, ut earum odio
+      reprehenderit modi facere quisquam error aliquid eum facilis numquam nam
+      perspiciatis hic rerum? Rem voluptatum, at ipsa eligendi recusandae nulla
+      magnam omnis esse nam consequuntur non quod id libero culpa, animi
+      suscipit maxime? Quisquam, sapiente. Cupiditate at sint provident suscipit
+      maxime? Quisquam, sapiente. Cupiditate at sint provident suscipit maxime?
+      Quisquam, sapiente. Cupiditate at sint provident deserunt, fuga id earum
+      quo ad debitis adipisci ipsum eius, magnam veniam quis! Laudantium rerum
+      incidunt eius iusto perferendis odit et corrupti? Doloremque, quam libero
+      dignissimos enim dolore consectetur esse? Placeat reiciendis voluptate
+      voluptatum totam inventore? Dolor consectetur dolorum fuga iusto
+      necessitatibus reiciendis.
+    </p>
+
+    <h1>this is end</h1>
+  </body>
+</html>

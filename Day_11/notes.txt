@@ -1,0 +1,53 @@
+Css positions:
+
+1.Static
+2.Relative
+3.Absolute
+4.Fixed 
+5.Sticky 
+
+
+1.Sticky:
+    position: static;
+    -default value 
+    -top,right,left,bottom are not set 
+
+2.relative:
+    position: relative;
+    -relative ti it's normal positions;
+    -top,right,left,bottom are set 
+    -other elements are not affected by this element
+    -can be used to move an element from it's normal position
+
+z-index:
+    -it is used to specify the stacking order of elements
+    -when overlapping each other 
+    default-0
+    higher value means higher z-index
+
+3.Fixed
+    -position: fixed;
+    -fixed to the browser window 
+    -top,right,left,bottom are set 
+    -other element are not affected by this elelment
+    -can be used to move an element from it's normal position
+
+4.Sticky:
+    -position: sticky;
+    -sticky to the browser
+    -top,right,left,bottom are set 
+    -other element are not affected by this elelment
+    -can be used to move an element from it's normal position
+    -the element remains in the smae position even if page s scrolled 
+    -it is combination of relative and fixed
+
+5.Absolute:
+    -position: absolute;
+    -absolute to it's normal position
+    -top,right,left,bottom are set 
+    -other element are not affected by this elelment
+    -can be used to move an element from it's normal position
+    -it depend on inherited elements
+    -it need to assign for child elements when the parent is relative, 
+    if parent position is not relative then it set with root element
+
