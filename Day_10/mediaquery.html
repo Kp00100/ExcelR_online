@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query 1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            border: 1px solid red;
+            height: 100vh;
+        }
+        .nav{
+            background-color: blueviolet;
+            height: 10%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .navItem{
+            font-size: 2em;
+            color: white;
+            margin: 20px;
+        }
+        .center{
+            text-align: center;
+            background-color: black;
+            color: white;
+            height: 400px;
+        }
+        /* laptop-1100
+        tab-700-1100
+        mobile-300-700 */
+        @media screen and (max-width: 1100px) and (min-width: 700px){
+            .nav{
+                background-color: red;
+                justify-content: space-between;
+            }
+            .footer{
+                background-color: red;
+
+            }
+        }
+        @media screen and (max-width: 700px) and (min-width: 300px){
+            .nav{
+                background-color: rgb(42, 94, 36);
+                justify-content: space-between;
+            }
+        }
+        /* width > height */
+        @media screen and (orientation : landscape) {
+            .center{
+                background-color: crimson;
+            }
+        }
+         /* width < height */
+        @media screen and (orientation : portrait) {
+            .center{
+                background-color: rgb(24, 22, 147);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Media Query</h1>
+    <p>it is used to create responsive pages</p>
+    <hr>
+    <div class="nav">
+            <div class="navItem">Home</div>
+            <div class="navItem">About</div>
+            <div class="navItem">Contact</div>
+    </div>
+    <!-- if it is laptop then it will be red and alignment should be on left side
+    if it is tablet then it will be green and alignment should be on center side 
+    if it is mobile then it will be blue and alignment should be on rigth side -->
+    <div>
+        <h1 class="center">This is center</h1>
+    </div>
+    <div>
+    <h2>Footer</h2>
+    </div>
+</body>
+</html>
