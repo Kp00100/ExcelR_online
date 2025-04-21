@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise All Selected</title>
+</head>
+<body>
+    <script>
+     const p1=Promise.resolve("person 1");
+     const p2=Promise.reject("person 2");
+     const p3=Promise.resolve("person 3");
+
+     Promise.allSettled([p1,p2,p3])
+     .then((result)=>{
+         console.log("All Settled:",result);
+     })
+     .catch((error)=>{
+         console.log("Error:",error);
+     })
+    
+    </script>
+</body>
+</html>

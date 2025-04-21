@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Call Back Function</title>
+  </head>
+  <body>
+    <script>
+      function boilWater(callback) {
+        setTimeout(() => {
+          console.log("Boiling water...");
+          callback();
+        }, 1000);
+      }
+
+      function brewCoffee(callback) {
+        setTimeout(() => {
+          console.log("Brewing coffee...");
+          callback();
+        }, 2000);
+      }
+      function addSugarAndMilk(callback) {
+        setTimeout(() => {
+          console.log("Adding sugar and milk...");
+          callback();
+        }, 1500);
+      }
+      function pourInCup(callback) {
+        setTimeout(() => {
+          console.log("Pouring in cup...");
+          callback();
+        }, 3000);
+      }
+      function serveCoffee() {
+        setTimeout(() => {
+          console.log("Serving coffee...");
+        }, 1000);
+      }
+      boilWater(() => {
+        brewCoffee(() => {
+          addSugarAndMilk(() => {
+            pourInCup(() => {
+              serveCoffee();
+            });
+          });
+        });
+      });
+      console.log("Coffee is ready to be served!");
+    </script>
+  </body>
+</html>
+
+
+
+<!-- 
+created n number of function
+    1. boilWater
+    2. brewCoffee
+    3. addSugarAndMilk
+    4. pourInCup
+    5. serveCoffee
+
+    i call with a calling function
+    boilWater();
+    brewCoffee();
+    addSugarAndMilk();
+    pourInCup();
+    serveCoffee();
+    --it printed in an order --synchronous
+
+    --then i used setTimeout to print the function after a delay
+    boilWater();
+    brewCoffee();
+    addSugarAndMilk();
+    pourInCup();
+    serveCoffee();
+    --it doesn't print in an order --asynchronous
+
+    --then i used call back function to print in an order
+    --it printed in an order 
+    boilWater(() => {
+        brewCoffee(() => {
+          addSugarAndMilk(() => {
+            pourInCup(() => {
+              serveCoffee();
+            });
+          });
+        });
+      });
+      --call back hell
+-->

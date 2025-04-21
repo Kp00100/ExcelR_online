@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        function operate(a,b,operation){
+            return operation(a,b);
+        }
+        function add(a,b){
+            return a+b;
+        }
+        function sub(a,b){
+            return a-b;
+        }
+        console.log(operate(2,3,add)); // 5
+        console.log(operate(2,3,sub)); // -1
+        
+    </script>
+</body>
+</html>

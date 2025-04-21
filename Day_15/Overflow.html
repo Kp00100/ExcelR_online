@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overflow</title>
+    <style>
+      .box {
+        width: 300px;
+        height: 100px;
+        background-color: red;
+      }
+      .one {
+        /* default */
+        overflow: visible;
+      }
+      .two {
+        overflow: hidden;
+      }
+      .three {
+        overflow: scroll;
+      }
+      .four {
+        overflow: auto;
+      }
+      .five{
+        overflow-x: hidden;
+        overflow-y: scroll;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Overflow</h1>
+    <p>it is used to hide/scroll the overflow content</p>
+    <p>it will work for block level elements and we need to mention a particular height</p>
+     <p>its a property of class</p>
+     <pre>
+        overflow: visible/hidden/scroll/auto;
+        overflow-x:(left/right)
+        overflow-y:(top/bottom)
+     </pre>
+
+
+
+    <p>this is visible/default</p>
+    <div class="box one">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+      provident deserunt suscipit quae minus nihil culpa animi quibusdam,
+      ducimus dolor veniam placeat, delectus, enim consequatur sunt? Tenetur
+      nostrum vero hic consequuntur nisi sapiente earum labore illum iusto
+      ipsam. Aspernatur, illum iste? Vitae pariatur ut error qui iure facere,
+      quas aliquid.
+    </div>
+    <br /><br /><br /><br /><br /><br />
+    <p>This is hidden</p>
+    <div class="box two">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+      provident deserunt suscipit quae minus nihil culpa animi quibusdam,
+      ducimus dolor veniam placeat, delectus, enim consequatur sunt? Tenetur
+      nostrum vero hic consequuntur nisi sapiente earum labore illum iusto
+      ipsam. Aspernatur, illum iste? Vitae pariatur ut error qui iure facere,
+      quas aliquid.
+    </div>
+
+    <br /><br /><br /><br /><br />
+    <p>this is scroll</p>
+    <div class="box three">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque officiis totam quaerat. Dignissimos, id deleniti fugiat ea aperiam nulla sequi, perspiciatis, ut porro cupiditate obcaecati.
+    </div>
+
+    <br /><br /><br /><br /><br />
+    <div class="box four">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum accusamus
+      nobis aliquam, cum ab dolorem placeat dolorum dignissimos consequuntur
+      possimus repellat vitae deleniti fugiat corrupti alias sequi eligendi
+      autem amet. Incidunt harum deserunt inventore. Expedita facere sed
+      asperiores voluptatibus quaerat temporibus excepturi. Repellat ullam eos
+      ea? Quidem unde dolor iure.
+    </div>
+
+    <br /><br /><br /><br /><br />
+    <div class="box five">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum accusamus
+      nobis aliquam, cum ab dolorem placeat dolorum dignissimos consequuntur
+      possimus repellat vitae deleniti fugiat corrupti alias sequi eligendi
+      autem amet. Incidunt harum deserunt inventore. Expedita facere sed
+      asperiores voluptatibus quaerat temporibus excepturi. Repellat ullam eos
+      ea? Quidem unde dolor iure.
+    </div>
+  </body>
+</html>

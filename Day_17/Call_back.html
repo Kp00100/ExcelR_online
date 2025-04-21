@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let userName=prompt("Enter your userName: ");
+        let password=prompt("Enter your password: ");
+        // function to check userName and password
+        //isSuccess--welcome user
+        //isFailure-login failed
+        function authentication(userName,password,isSuccess,isFailure){
+            if(userName=="admin" && password=="1234"){
+                isSuccess(userName);
+            }else{
+                isFailure();
+            }
+        }
+        function isSuccess(userName){
+         document.write(`Welcome ${userName}`);
+        }
+        function isFailure(){
+        document.write("Login failed! Please try again.");
+        }
+        authentication(userName,password,isSuccess,isFailure);
+
+    </script>
+</body>
+</html>

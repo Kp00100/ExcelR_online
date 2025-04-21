@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Async Await</title>
+  </head>
+  <body>
+    <script>
+      function boilWater() {
+        return new Promise((resolve) => {
+          setTimeout(() => {
+            console.log("Boiling water...");
+            resolve();
+          }, 1000);
+        });
+      }
+      function brewCoffee() {
+        return new Promise((resolve) => {
+          setTimeout(() => {
+            console.log("Brewing coffee...");
+            resolve();
+          }, 2000);
+        });
+      }
+      function addSugarAndMilk() {
+        return new Promise((resolve) => {
+          setTimeout(() => {
+            console.log("Adding sugar and milk...");
+            resolve();
+          }, 1500);
+        });
+      }
+      function pourInCup() {
+        return new Promise((resolve) => {
+          setTimeout(() => {
+            console.log("Pouring in cup...");
+            resolve();
+          }, 1000);
+        });
+      }
+      function serveCoffee() {
+        return new Promise((resolve) => {
+          setTimeout(() => {
+            console.log("Serving coffee...");
+            resolve();
+          }, 2000);
+        });
+      }
+     
+
+      async function makeCoffee() {
+       try {
+        await boilWater();
+        await brewCoffee();
+        await addSugarAndMilk();
+        await pourInCup();
+        await serveCoffee();
+       } catch (error) {
+        console.error("Error:", error);
+       }  
+      }
+      makeCoffee();
+
+
+
+
+    </script>
+  </body>
+</html>

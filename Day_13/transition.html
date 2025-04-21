@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Task1</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            margin: 10px 0;
+        }
+        .without{
+            background-color: aqua;
+        }
+        .with{
+            background-color: rgb(255, 0, 0);
+            /* transition-duration: 2s;
+            transition-property: all;
+            transition-delay: 1s;
+            transition-timing-function: ease; 
+            transition: property duration timing function delay*/
+            transition: all 2s ease 1s;
+        }
+         .box:hover{
+            /* width: 400px;
+            height: 150px; */
+            transform: rotate(90deg);
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Transitions</h1>
+    <p>it is used to animate the elements</p>
+    <p>it is used to change the style, position of the elememts</p>
+    <p>it will apply when hover is using</p>
+    <pre>
+        1.transition-property: it provide information on properties
+        2.transition-duration: it is used to provide duration
+        3.transition-timing-function: it is used to apply timing
+        4.transition-delay: it is used to delay the transition
+
+        shorthand structure:
+        transition: property duration timing-function delay;
+        transition: property duration;
+    </pre>
+    <div class="box without">Without Transition</div>
+    <div class="box with">With Transition</div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+Tokens :
+    1.identifiers
+    2.keywords
+    3.literals/values
+    4.data types
+    5.operators
+    6.variables
+
+
+Identifiers: providing names 
+    1.variable names
+    2.function names
+    3.class names
+
+
+variable/function names:
+    1.cannot start with number
+    2.cannot start with special characters(except _ and $)
+    3.cannot contain space
+    4.cannot be reserved(inbuilt) keywords
+    5.should be meaningful
+    6.should be short
+
+Ex:
+   a=10;(correct)
+   1a=10;(wrong)
+   _a=10;(correct)
+   $a=10;(correct)
+
+========================================
+keywords:
+    reserved words-if else for while etc
+
+==========================================
+
+Literals/value/data:
+     1.Number 
+         10 , -10 , 10.0
+     2.String
+        -group of characters
+        -denoted with double quotes(""), single quotes(''),
+         template literals/back ticks(``)- used for interpolation
+     3.Boolean
+        -true or false
+     4.Null
+     5.Undefined
+     6.Symbol
+     7.array
+     8.object
+
+
+==========================================
+
+Data types:
+   1.primitive data types-immutable(directly stores in memory)
+         1.number --10 , -10, 10.0
+         2.string -- "" ,'',``
+         3.boolean -- true or false
+         4.null --no value-object type
+         5.undefined -declare variable without value
+         6.symbol - symbol("id")
+         7.bigint -23444444444444444444444444444444444444444444444444444444n
+   2.non primitive data types -mutable/ stores data in reference
+        1.array
+        2.object
+        3.Map
+        4.Set
+        5.Date
+        6.Regexp
+
+
+==========================================
+
+    
+variables :
+
+   1.variable declaration:
+       var a, //undefined
+       let b, //undefined
+       const c, //error
+   2.variable initialization:(assigning a value to variable)
+       var a=10;  let b=20; let c=30;
+   3.variable reinitialization:
+       var a=20;  let b=30;
+           a=30;      b=40;
+   4.variable redeclaration:
+       var a=10;  
+       var a=30;  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Variables:
+Data types:

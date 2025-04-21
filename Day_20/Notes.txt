@@ -1,0 +1,130 @@
+JSON Objects:
+--------------------------------------------------------------------
+     -javascript object notation
+     -used to store(nosql) and exchange data(client<->sever)
+     -it is a lightweight data interchange format
+     -it is a text based format
+     -it is a collection of key/value pairs
+
+
+ex:
+
+{
+   "key1":"value1" ,
+   "key2":"value2"
+}
+
+
+                 js object                        JSON object
+-------------------------------------------------------------------
+syntax          flexible and dynamic            fixed/strict and static
+keyQuotes       optional                        mandatory
+
+
+
+Json Rules :
+ -json object must be in curly brackets({})
+ -json object contains collection of key and value pairs
+ -key must be in double quotes
+ -value can be in double quotes or single quotes(based on data type)
+ -string must be in double quotes
+ -key name must be unique
+----------------------------------------------------------------------
+ 
+ Json Structure:
+    1.Objects(like dictionaries/maps) 
+    2.Arrays(like lists)
+    3.Nested Objects
+----------------------------------------------------------------
+JSON Arrays:
+    -it is a collection of values
+    -it is a list of values
+
+    ex: [1,2,3,4,5,6,7,8,9,10]
+        ["abc","xyz","pqr","mno","lmn","jkl","hij","def","ghi","abc"]
+        [
+            {},{},{}
+        ]
+------------------------------------------------------------------
+Accessing data from json objects:
+    -it is same as accessing data from js objects
+    -with the help of(dot(.)operator) and brackets([])
+
+----------------------------------------------------------------
+Object Methods:
+        1.Object.keys()--fetch all the keys
+        2.Object.values()--fetch all the values
+        3.Object.entries()--fetch all the key value pairs
+
+--------------------------------------------------------------
+Merge JSON Objects:
+    - it is same as merging js objects
+    - with the help of spread operator(...)
+    - with the help of Object.assign()
+----------------------------------------------------------------
+Add JSON Properties:
+    -with the help of dot(.)operator
+    -with the help of square brackets([])
+    -with the help of Object.assign()
+---------------------------------------------------------------
+Delete JSON Properties:
+    -with the help of dot(.)operator
+    -with the help of square brackets([])
+    -with the help of delete keyword
+---------------------------------------------------------------
+Iterate JSON Objects:(consist list of key value pairs)
+    -with the help of for  loop
+    -with the help of foreach  loop
+ Iterate key in json object:
+ let json1={
+     "key1":"value1",
+     "key2":"value2",
+ }
+    1.for loop
+syntax;
+//iterating only keys
+for(let key in json1){
+    console.log(key);
+}
+//iterating keys and values
+for(let key in json1){
+    console.log(json1[key] - key);
+}
+
+2.foreach loop
+syntax:
+//iterating only keys
+json1.forEach((key)=>{
+    console.log(key);
+})
+//iterating keys and values
+json1.forEach((key)=>{
+    console.log(json1[key] - key);
+})
+//iterating keys and values with Object
+Object.entries(json1).forEach((key)=>{
+    console.log(key, json1[key]);
+})
+
+--------------------------------------------------------
+Destructuring JSON Objects:
+    -it is same as destructuring js objects
+    -it is a super way of accessing data from json objects
+    -it makes code more cleaner,shorter,readable and maintainable
+    -it helps to make renaming of variables easy
+    -it helps to assign default values to variables
+
+const user={
+    "name":"John",
+    "age":30,
+    "city":"New York"
+}
+//without destructuring
+  let UserName=user.name;
+  let UserAge=user.age;
+  console.log(UserName ,UserAge);
+
+ // with destructuring
+ const{name,age}=user; 
+ console.log(name,age);
+ -----------------------------------------------------------

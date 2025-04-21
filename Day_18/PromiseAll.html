@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise - All</title>
+</head>
+<body>
+    <!-- cooking biryani 
+    1.chicken shop
+    2.Grocery shop
+    3.cutting section and cleaning dishes
+    4.cooking section
+    -->
+
+    <script>
+    const task1=Promise.resolve("chicken shop")   
+    const task2=Promise.resolve("Grocery shop")
+    const task3=Promise.resolve("cutting section and cleaning dishes")
+    Promise.all([task1,task2,task3])
+    .then((results)=>{
+        console.log("done with chicken , grocery and cutting section");
+        console.log(results);
+        
+        console.log("person 4 is ready to cook biryani");  
+    })
+    .catch((error)=>{
+        console.log("Error:",error);
+    })
+    
+    </script>
+</body>
+</html>

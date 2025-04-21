@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitwise operator</title>
+</head>
+<body>
+    
+    <h1>Bitwise operator</h1>
+    <p>it is used to perform bit wise operation </p>
+    <p>types :
+        <ul>
+            <li>& -and</li>
+            <li>| -or</li>
+            <li>^ -xor</li>
+            <li>~ -not</li>
+            <li><< -left shift</li>
+            <li>> -right shift</li>
+        </ul>
+        realtime use cases:
+        <ul>
+            <li>Low -level data manipulation</li>
+            <li>data encoding</li>
+            <li>encrypt algorithms</li>
+
+    </p>
+
+
+    <script>
+        a=1;//0001
+
+        b=5;//0101
+
+
+        /*
+          0001-1
+          0101-5
+          ------------
+          0001-1
+        */
+        console.log(a&b);//sets bit to 1 when the both bits are 1
+         /*
+          0001-1
+          0101-5
+          ------------
+          0101-5
+        */
+        console.log(a|b);//sets bit to 1 when one of two bits is 1
+          /*
+          0001-1
+          0101-5
+          ------------
+          0100-4
+        */
+        console.log(a^b);//sets bit to 1 when only one of two bits is 1
+        
+
+
+        console.log(~a);//inverts all bits
+
+        /*
+        0101
+        1010
+        */
+        console.log(5<<1);//left shift--shifts bits to the left side,add zeros on the right side
+        
+        /*
+        0101
+        0010
+        */
+        console.log(5>>1);//right shift--shifts bits to the right side
+        
+        
+        
+    </script>
+</body>
+</html>

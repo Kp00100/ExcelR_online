@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function</title>
+  </head>
+  <body>
+    <script>
+      first_function();
+
+      function first_function() {
+        console.log("Hello World!");
+      }
+      first_function();
+
+      //   ===========================
+
+      function second_function(name) {
+        console.log("Hello " + name + "!");
+      }
+      second_function("John Doe");
+
+      // =====================================
+
+      function third_function(name) {
+        console.log(`hello ${name}`); // template string
+      }
+      third_function("John Doe");
+
+      // =====================================
+
+      function fourth_function(name) {
+        return `hello ${name}`;
+      }
+      let data = fourth_function("kim");
+      console.log(data);
+      console.log(fourth_function("kim"));
+    </script>
+  </body>
+</html>

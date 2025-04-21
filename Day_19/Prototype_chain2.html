@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prototype Chain 2</title>
+  </head>
+  <body>
+    <script>
+      const Animal = {
+        species: "Animal",
+        eat: function () {
+          console.log("Animal eats");
+        },
+
+      };
+    //    console.log(Animal);
+    //    console.log(Animal.eat());
+      
+
+      const Dog = Object.create(Animal); //creating Dog object with Animal as prototype
+      Dog.color = "black"; //adding color property to Dog object
+      Dog.bark = function () {
+        console.log("Dog barks");
+      };
+      Dog.eat = function () {
+        console.log("Dog eats");
+      }; //overriding eat method for Dog object
+       console.log(Dog);
+        console.log(Dog.eat()); //calling Dog's eat method
+       
+
+
+
+      const Cat = Object.create(Animal); //creating Cat object with Animal as prototype
+      Cat.color = "white"; //adding color property to Cat object
+      Cat.meow = function () {
+        console.log("Cat meows");
+      };
+    //   console.log(Cat);
+    </script>
+  </body>
+</html>

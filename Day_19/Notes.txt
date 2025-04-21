@@ -1,0 +1,116 @@
+object :
+    -it is a collection of related data and functions
+    -it is a collection of properties and methods
+    -it is a collection of variables and functions
+    -it indicates real time entity
+ex:
+       dog :
+            data/properties/variables:name ,color, age ,breed ,height
+            actions/behavior/functions/methods:barking, eating, running,jumping
+       function dog(variable_1, variable_2){
+            this.name=variable_1;
+            this.color=variable_2;
+            this.propertyName=variableName;
+            
+            function barking(){
+                
+            }
+       }
+
+ Note : in js every object has a prototype
+ ----------------------------------------------------------------------------      
+
+Creation of Objects:
+
+         1.constructor function (before es6) 
+         2.class (after es6)
+         3.object literal
+         4.Object.create()
+
+===============================================================================
+
+class:
+    -it is a template for creating objects
+    -it is a blueprint for creating objects
+
+creation :
+     1.class declaration
+     2.class expression
+
+1.class declaration :
+----------------------------------------------------------------------
+        class className{
+                    constructor(var1, var2....){
+                    this.var1=var1;
+                    this.var2=var2;
+                    }
+                    function f1(){
+                        
+                    }
+        }
+
+2.class expression :
+----------------------------------------------------------------------
+        let className=new class{
+                   constructor(var1, var2....){
+                    this.var1=var1;
+                    this.var2=var2;
+                    }
+                    function f1(){
+                        
+                    }
+        }
+
+
+==========================================================================
+
+object literal :
+---------------
+
+let obj={
+    'propertyName'='value',
+    'propertyName'='value',
+}
+
+======================================================================
+
+Object.create():
+----------------
+        const obj1={
+            'propertyName'='value',
+        }
+
+        const obj2=Object.create(obj1);
+=====================================================================
+
+prototype:
+    -it is a property of an object
+    -it allows other object to inherit properties and methods
+    -it is used to add new properties and methods to an object
+    -this created a prototype chain between objects
+                   :allows objects to share properties and methods
+
+prototype chaining:
+    -it is a chain of objects
+    -we can achieve prototype chaining by using Object.create() method
+    -it is used to create a prototype chain between objects
+    -it allows objects to share properties and methods
+    - it is used to create inheritance in js
+    how:
+        let obj1={
+            'propertyName'='value',
+        }
+        let obj2=Object.create(obj1);
+
+        let obj3=Object.create(obj2);
+    -setting prototype of obj1 to obj2 will allow obj2 to inherit properties and methods from obj1
+-------------------------------------------------------------------------------------------------------------------
+
+  inheritance:
+    - is a way to create a new object from an existing object
+    - thus,it can share properties and methods of an existing object
+    - to achieve we can use Object.create()
+  
+
+   
+    

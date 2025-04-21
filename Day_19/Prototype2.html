@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prototype 2</title>
+  </head>
+  <body>
+    <script>
+      function Student(firstName, lastName, yearOfBirth) {
+        this.fName = firstName;
+        this.lName = lastName;
+        this.year = yearOfBirth;
+        this.age = function () {
+          return new Date().getFullYear() - this.year;
+        };
+      }
+      Student.prototype.getFullName = function () {
+        return this.fName + " " + this.lName;
+      };
+      let s1 = new Student("John", "Doe", 1990);
+      let s2 = new Student("Jane", "Doe", 1991);
+      let s3 = new Student("Jim", "Beam", 1992);
+      console.log(s1.getFullName());
+      console.log(s2.getFullName());
+      console.log(s3.getFullName());
+      console.log(s1.age());
+    </script>
+  </body>
+</html>

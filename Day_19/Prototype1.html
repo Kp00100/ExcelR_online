@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype 1</title>
+</head>
+<body>
+    
+    <script>
+        function Car(name){
+         this.name=name;
+        }
+        let c1=new Car('BMW');
+        console.log(c1);
+        console.log(c1.name);//name is accessing from c1 with the help of dot(.)operator
+        console.log(c1.color);//undefined because color is not defined in the constructor function
+        c1.color='red';//adding color property to c1 object
+        console.log(c1);
+        Car.prototype.model='X4';//adding model property to the prototype of Car constructor function
+        console.log(c1);
+        
+
+
+       
+        
+
+        
+    </script>
+</body>
+</html>
